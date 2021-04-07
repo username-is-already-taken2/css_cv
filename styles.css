@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+.outer-container {
+  background: grey;
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 75%;
+  }
+}
+.main {
+  background-color: green;
+  min-height: 100vh;
+  width: 75%;
+  max-width: 1200px;
+  flex-direction: row;
+}
+
+.main__content {
+  background-color: white;
+  min-height: 100vh;
+  width: 75%;
+  border-top-right-radius: 150px;
+  /* flex: 4 0 auto; */
+
+}
+
+.main__bio {
+  border: 2px solid orange;
+  /* flex: 1 0 auto; */
+  vertical-align: top;
+  flex-direction: row;
+}
+
+.main__name {
+  border: 2px solid orangered;
+  text-align: center;
+  vertical-align: middle;
+
+  text-shadow: orangered;
+  /*font-size: 100%; doesn't seem to work */
+  font-size: 100px;
+
+  margin: auto;
+  /*width: 95%;*/
+}
+
+.main__summary {
+  border: 2px solid black;
+}
+
+.main__experience {
+  border: 2px solid blue;
+}
+
+.bio__picture {
+  border: 2px solid green;
+}
+
+.bio__contact {
+  border: 2px solid yellow;
+}
+
+.bio__skills {
+  border: 2px solid purple;
+  align-content: center;
+}
