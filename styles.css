@@ -2,51 +2,77 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
+  /* width: 100%;
+  height: 100%; */
 }
 
-.outer-container {
-  background: grey;
+.outer__main {
+  background: linear-gradient(to bottom, rgb(47, 47, 47),rgb(133, 133, 133));
+  /* background-image: linear-gradient(180deg,rgba(153, 0, 255),rgb(255, 0, 242)); */
   width: 100%;
-}
-
-@media (max-width: 1200px) {
-  .container {
-    width: 75%;
-  }
+  padding-block-start: 40px;
+  padding-block-end: 100px;
+  /* display: flex;
+flex-direction: column;
+flex: 1;
+justify-content: center;
+flex-direction: column; 
+align-content: center;*/
 }
 .main {
-  background-color: green;
-  min-height: 100vh;
-  width: 75%;
   max-width: 1200px;
+  margin: auto;
+  width: 95%;
+  /* 
   flex-direction: row;
-}
-
-.main__content {
-  background-color: white;
-  min-height: 100vh;
-  width: 75%;
-  border-top-right-radius: 150px;
-  /* flex: 4 0 auto; */
-
+  justify-content: center;
+flex-direction: column; 
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;*/
+  /* pink
+  box-shadow: 1px 1px 15px hotpink;  
+  border-color: hotpink;
+  */
+  box-shadow: 0px 0px 15px 05px #ff00bf;  
+  border-color: #d900ff;
+  border: 2px solid, ;
+  border-top-right-radius: 85px;
+  border-bottom-left-radius: 85px;
+  display: flex;
+  background-color: rgb(238, 238, 238);
 }
 
 .main__bio {
   border: 2px solid orange;
-  /* flex: 1 0 auto; */
-  vertical-align: top;
-  flex-direction: row;
+  width: 25%;
+  min-height: 100vh;
 }
+
+.main__content {
+
+  border-bottom-left-radius: 85px;
+
+  width: 75%;
+  border-top-right-radius: 85px;
+  /* flex: 4 0 auto; */
+  margin-top: 20px;
+  
+}
+
+
 
 .main__name {
   border: 2px solid orangered;
   text-align: center;
-  vertical-align: middle;
-
+  height:auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-shadow: orangered;
   /*font-size: 100%; doesn't seem to work */
   font-size: 100px;
+  font-display: block;
 
   margin: auto;
   /*width: 95%;*/
@@ -54,6 +80,8 @@
 
 .main__summary {
   border: 2px solid black;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .main__experience {
@@ -62,6 +90,18 @@
 
 .bio__picture {
   border: 2px solid green;
+  /* vertical-align: top;
+  align-content: center;
+  max-width:100%;
+  height:auto;
+  width:100%; */
+  display: block;
+  margin-top: 42px;
+  margin-left: auto;
+  margin-right: auto;
+  height:auto;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .bio__contact {
